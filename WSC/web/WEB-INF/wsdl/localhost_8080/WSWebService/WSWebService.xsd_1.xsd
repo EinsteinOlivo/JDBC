@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://WS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WS/">
+
+<xs:element name="correos" type="tns:correos"/>
+
+<xs:element name="correosCreate" type="tns:correosCreate"/>
+
+<xs:element name="correosCreateResponse" type="tns:correosCreateResponse"/>
+
+<xs:element name="correosDestroy" type="tns:correosDestroy"/>
+
+<xs:element name="correosDestroyAndView" type="tns:correosDestroyAndView"/>
+
+<xs:element name="correosDestroyAndViewResponse" type="tns:correosDestroyAndViewResponse"/>
+
+<xs:element name="correosDestroyResponse" type="tns:correosDestroyResponse"/>
+
+<xs:element name="correosGetItems" type="tns:correosGetItems"/>
+
+<xs:element name="correosGetItemsAvailableSelectMany" type="tns:correosGetItemsAvailableSelectMany"/>
+
+<xs:element name="correosGetItemsAvailableSelectManyResponse" type="tns:correosGetItemsAvailableSelectManyResponse"/>
+
+<xs:element name="correosGetItemsAvailableSelectOne" type="tns:correosGetItemsAvailableSelectOne"/>
+
+<xs:element name="correosGetItemsAvailableSelectOneResponse" type="tns:correosGetItemsAvailableSelectOneResponse"/>
+
+<xs:element name="correosGetItemsResponse" type="tns:correosGetItemsResponse"/>
+
+<xs:element name="correosGetSelected" type="tns:correosGetSelected"/>
+
+<xs:element name="correosGetSelectedResponse" type="tns:correosGetSelectedResponse"/>
+
+<xs:element name="correosInstancia" type="tns:correosInstancia"/>
+
+<xs:element name="correosInstanciaResponse" type="tns:correosInstanciaResponse"/>
+
+<xs:element name="correosNext" type="tns:correosNext"/>
+
+<xs:element name="correosNextResponse" type="tns:correosNextResponse"/>
+
+<xs:element name="correosPrepareCreate" type="tns:correosPrepareCreate"/>
+
+<xs:element name="correosPrepareCreateResponse" type="tns:correosPrepareCreateResponse"/>
+
+<xs:element name="correosPrepareEdit" type="tns:correosPrepareEdit"/>
+
+<xs:element name="correosPrepareEditResponse" type="tns:correosPrepareEditResponse"/>
+
+<xs:element name="correosPrepareList" type="tns:correosPrepareList"/>
+
+<xs:element name="correosPrepareListResponse" type="tns:correosPrepareListResponse"/>
+
+<xs:element name="correosPrepareView" type="tns:correosPrepareView"/>
+
+<xs:element name="correosPrepareViewResponse" type="tns:correosPrepareViewResponse"/>
+
+<xs:element name="correosPrevious" type="tns:correosPrevious"/>
+
+<xs:element name="correosPreviousResponse" type="tns:correosPreviousResponse"/>
+
+<xs:element name="correosUpdate" type="tns:correosUpdate"/>
+
+<xs:element name="correosUpdateResponse" type="tns:correosUpdateResponse"/>
+
+<xs:element name="correosgetPagination" type="tns:correosgetPagination"/>
+
+<xs:element name="correosgetPaginationResponse" type="tns:correosgetPaginationResponse"/>
+
+<xs:element name="perCreate" type="tns:perCreate"/>
+
+<xs:element name="perCreateResponse" type="tns:perCreateResponse"/>
+
+<xs:element name="perDestroy" type="tns:perDestroy"/>
+
+<xs:element name="perDestroyAndView" type="tns:perDestroyAndView"/>
+
+<xs:element name="perDestroyAndViewResponse" type="tns:perDestroyAndViewResponse"/>
+
+<xs:element name="perDestroyResponse" type="tns:perDestroyResponse"/>
+
+<xs:element name="perGetItems" type="tns:perGetItems"/>
+
+<xs:element name="perGetItemsAvailableSelectMany" type="tns:perGetItemsAvailableSelectMany"/>
+
+<xs:element name="perGetItemsAvailableSelectManyResponse" type="tns:perGetItemsAvailableSelectManyResponse"/>
+
+<xs:element name="perGetItemsAvailableSelectOne" type="tns:perGetItemsAvailableSelectOne"/>
+
+<xs:element name="perGetItemsAvailableSelectOneResponse" type="tns:perGetItemsAvailableSelectOneResponse"/>
+
+<xs:element name="perGetItemsResponse" type="tns:perGetItemsResponse"/>
+
+<xs:element name="perGetPagination" type="tns:perGetPagination"/>
+
+<xs:element name="perGetPaginationResponse" type="tns:perGetPaginationResponse"/>
+
+<xs:element name="perGetSelected" type="tns:perGetSelected"/>
+
+<xs:element name="perGetSelectedResponse" type="tns:perGetSelectedResponse"/>
+
+<xs:element name="perInstancia" type="tns:perInstancia"/>
+
+<xs:element name="perInstanciaResponse" type="tns:perInstanciaResponse"/>
+
+<xs:element name="perNext" type="tns:perNext"/>
+
+<xs:element name="perNextResponse" type="tns:perNextResponse"/>
+
+<xs:element name="perPrepareCreate" type="tns:perPrepareCreate"/>
+
+<xs:element name="perPrepareCreateResponse" type="tns:perPrepareCreateResponse"/>
+
+<xs:element name="perPrepareEdit" type="tns:perPrepareEdit"/>
+
+<xs:element name="perPrepareEditResponse" type="tns:perPrepareEditResponse"/>
+
+<xs:element name="perPrepareList" type="tns:perPrepareList"/>
+
+<xs:element name="perPrepareListResponse" type="tns:perPrepareListResponse"/>
+
+<xs:element name="perPrepareView" type="tns:perPrepareView"/>
+
+<xs:element name="perPrepareViewResponse" type="tns:perPrepareViewResponse"/>
+
+<xs:element name="perPrevious" type="tns:perPrevious"/>
+
+<xs:element name="perPreviousResponse" type="tns:perPreviousResponse"/>
+
+<xs:element name="perUpdate" type="tns:perUpdate"/>
+
+<xs:element name="perUpdateResponse" type="tns:perUpdateResponse"/>
+
+<xs:element name="personas" type="tns:personas"/>
+
+<xs:element name="telCreate" type="tns:telCreate"/>
+
+<xs:element name="telCreateResponse" type="tns:telCreateResponse"/>
+
+<xs:element name="telDestroy" type="tns:telDestroy"/>
+
+<xs:element name="telDestroyAndView" type="tns:telDestroyAndView"/>
+
+<xs:element name="telDestroyAndViewResponse" type="tns:telDestroyAndViewResponse"/>
+
+<xs:element name="telDestroyResponse" type="tns:telDestroyResponse"/>
+
+<xs:element name="telGetItems" type="tns:telGetItems"/>
+
+<xs:element name="telGetItemsAvailableSelectMany" type="tns:telGetItemsAvailableSelectMany"/>
+
+<xs:element name="telGetItemsAvailableSelectManyResponse" type="tns:telGetItemsAvailableSelectManyResponse"/>
+
+<xs:element name="telGetItemsAvailableSelectOne" type="tns:telGetItemsAvailableSelectOne"/>
+
+<xs:element name="telGetItemsAvailableSelectOneResponse" type="tns:telGetItemsAvailableSelectOneResponse"/>
+
+<xs:element name="telGetItemsResponse" type="tns:telGetItemsResponse"/>
+
+<xs:element name="telGetPagination" type="tns:telGetPagination"/>
+
+<xs:element name="telGetPaginationResponse" type="tns:telGetPaginationResponse"/>
+
+<xs:element name="telGetSelected" type="tns:telGetSelected"/>
+
+<xs:element name="telGetSelectedResponse" type="tns:telGetSelectedResponse"/>
+
+<xs:element name="telInstancia" type="tns:telInstancia"/>
+
+<xs:element name="telInstanciaResponse" type="tns:telInstanciaResponse"/>
+
+<xs:element name="telNext" type="tns:telNext"/>
+
+<xs:element name="telNextResponse" type="tns:telNextResponse"/>
+
+<xs:element name="telPrepareCreate" type="tns:telPrepareCreate"/>
+
+<xs:element name="telPrepareCreateResponse" type="tns:telPrepareCreateResponse"/>
+
+<xs:element name="telPrepareEdit" type="tns:telPrepareEdit"/>
+
+<xs:element name="telPrepareEditResponse" type="tns:telPrepareEditResponse"/>
+
+<xs:element name="telPrepareList" type="tns:telPrepareList"/>
+
+<xs:element name="telPrepareListResponse" type="tns:telPrepareListResponse"/>
+
+<xs:element name="telPrepareView" type="tns:telPrepareView"/>
+
+<xs:element name="telPrepareViewResponse" type="tns:telPrepareViewResponse"/>
+
+<xs:element name="telPrevious" type="tns:telPrevious"/>
+
+<xs:element name="telPreviousResponse" type="tns:telPreviousResponse"/>
+
+<xs:element name="telUpdate" type="tns:telUpdate"/>
+
+<xs:element name="telUpdateResponse" type="tns:telUpdateResponse"/>
+
+<xs:element name="telefonos" type="tns:telefonos"/>
+
+<xs:complexType name="correosGetItemsAvailableSelectMany">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosGetItemsAvailableSelectManyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectItem">
+<xs:sequence>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="disabled" type="xs:boolean"/>
+<xs:element name="escape" type="xs:boolean"/>
+<xs:element name="label" type="xs:string" minOccurs="0"/>
+<xs:element name="noSelectionOption" type="xs:boolean"/>
+<xs:element name="value" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perGetItems">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataModel" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataModel" abstract="true">
+<xs:sequence>
+<xs:element name="rowIndex" type="xs:int"/>
+<xs:element name="wrappedData" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perPrevious">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPreviousResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareEdit">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareEditResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosGetSelected">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosGetSelectedResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:correos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correos">
+<xs:sequence>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="correoId" type="xs:int" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="personaId" type="tns:personas" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="personas">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaNacimiento" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="personaId" type="xs:int" minOccurs="0"/>
+<xs:element name="sexo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telGetItems">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataModel" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosNext">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosNextResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telPrepareEdit">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telPrepareEditResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosgetPagination">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosgetPaginationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:paginationHelper" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="paginationHelper" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetSelected">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetSelectedResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:telefonos" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telefonos">
+<xs:sequence>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="personaId" type="tns:personas" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="telefonoId" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telPrepareView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telPrepareViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perNext">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perNextResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosUpdate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosUpdateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosDestroy">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosDestroyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosDestroyAndView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosDestroyAndViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telPrepareList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telPrepareListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perPrepareEdit">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPrepareEditResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perPrepareView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPrepareViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perUpdate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perUpdateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telDestroyAndView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telDestroyAndViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perGetItemsAvailableSelectMany">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetItemsAvailableSelectManyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perPrepareList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPrepareListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telPrevious">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telPreviousResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telUpdate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telUpdateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perInstancia">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perInstanciaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:personasController" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="personasController">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetSelected">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetSelectedResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:personas" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosGetItems">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosGetItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataModel" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosPrevious">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosPreviousResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telGetItemsAvailableSelectMany">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetItemsAvailableSelectManyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perGetPagination">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetPaginationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:paginationHelper" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosGetItemsAvailableSelectOne">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosGetItemsAvailableSelectOneResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareList">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosPrepareListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telDestroy">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telDestroyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telInstancia">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telInstanciaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:telefonosController" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telefonosController">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosInstancia">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="correosInstanciaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:correosController" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correosController">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPrepareCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perPrepareCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telPrepareCreate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telPrepareCreateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telNext">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telNextResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perDestroyAndView">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perDestroyAndViewResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perGetItemsAvailableSelectOne">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perGetItemsAvailableSelectOneResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telGetItemsAvailableSelectOne">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetItemsAvailableSelectOneResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:selectItem" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="telGetPagination">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="telGetPaginationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:paginationHelper" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="perDestroy">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="perDestroyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
